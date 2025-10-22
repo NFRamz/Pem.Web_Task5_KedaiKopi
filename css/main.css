@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-200%); 
+    }
+ }

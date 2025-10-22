@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NF_Coffee - Kopi Pilihan Nusantara</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+  type="module"
+></script>
+
+</head>
+
+
+
+<!-- ===== HEADER SECTION ===== -->
+<header class="z-10 bg-white/80 fixed w-full">
+    <nav class="container mx-auto px-6 py-4 flex justify-between">
+        <img src="image/logo_NFCoffee.png" class="hidden md:flex w-1/6">
+        <img src="image/logo_NFCoffee_mobile.png" alt="Logo Mobile" class="md:hidden w-1/12">
+       
+        <div class="hidden font-bold md:flex space-x-5 translate-y-1/4">
+            <a href="#beranda" class="text-gray-600 hover:text-yellow-700 transition">Beranda</a>
+            <a href="#tentang" class="text-gray-600 hover:text-yellow-700 transition">Tentang</a>
+            <a href="#produk" class="text-gray-600 hover:text-yellow-700 transition">Produk</a>
+            <a href="#galeri" class="text-gray-600 hover:text-yellow-700 transition">Galeri</a>
+            <a href="#kontak" class="text-gray-600 hover:text-yellow-700 transition">Kontak</a>
+        </div>
+
+        <!-- Mobile -->
+        <button id="mobile-menu-button" class="md:hidden text-yellow-950/85">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+        
+    </nav>
+    
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-white font-bold">
+        <a href="#beranda" class="block text-gray-600 hover:text-yellow-700 transition">Beranda</a>
+        <a href="#tentang" class="block text-gray-600 hover:text-yellow-700 transition">Tentang</a>
+        <a href="#produk" class="block text-gray-600 hover:text-yellow-700 transition">Produk</a>
+        <a href="#galeri" class="block text-gray-600 hover:text-yellow-700 transition">Galeri</a>
+        <a href="#kontak" class="block text-gray-600 hover:text-yellow-700 transition">Kontak</a>
+    </div>
+
+    
+</header>
+
+    
+<body class="bg-yellow-700/10 text-yellow-950/85">
+    <!-- ===== HERO SECTION ===== -->
+    <section id="beranda" class="grid md:grid-cols-2 pt-20 pl-20 bg-yellow-700/25">
+        <div class="container mx-auto px-6 py-20 text-left">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 mr-10">Nikmati Secangkir Kopi Pilihan Khas Nusantara</h1>
+            <p class="text-lg text-yellow-950/85/80 mb-8 max-w-3xl mx-auto">Kami menyajikan biji kopi terbaik dari seluruh penjuru Indonesia, diolah dengan penuh cinta untuk menciptakan secangkir kebahagiaan untuk Anda.</p>
+            <a href="https://maps.app.goo.gl/gzR4YjhtB5NLdGdy6" class="bg-yellow-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-900">Kunjungi Kami</a>
+        </div>
+
+        <div class="container translate-x-1/4 w-1/2 max-md:hidden">
+            <dotlottie-wc
+                src="https://lottie.host/9ed559b3-465e-4e90-beb3-d1b7555f2747/LQwAsHS80s.lottie"
+                style="width: 500px;height: 500px"
+                autoplay
+                loop
+                >
+            </dotlottie-wc>
+             
+        </div>
+    </section>
+
+    <!-- ===== TENTANG KAMI SECTION === -->
+    <section id="tentang" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <img src="image\kedaiKopi.jpg" alt="Kedai Kopi NF_Coffee" class="rounded-lg shadow-xl w-full">
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Cerita di Balik Kami</h2>
+                    <p class="text-yellow-950/85/80 mb-4">NF_Coffee lahir dari kecintaan kami terhadap kopi Indonesia. Kami berkeliling nusantara untuk menemukan biji kopi dengan karakter unik dan membawanya langsung ke cangkir Anda. Setiap seduhan adalah sebuah cerita.</p>
+                    <p class="text-yellow-950/85/80">Visi kami adalah untuk mempopulerkan kekayaan rasa kopi lokal dan menjadi rumah bagi para penikmat kopi untuk berkumpul dan berbagi inspirasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUK SECTION ===== -->
+    <section id="produk" class="py-20 bg-yellow-700/25">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Produk Unggulan Kami</h2>
+                <p class="text-yellow-950/80 mt-2">Diseduh dari biji kopi pilihan, hanya untuk Anda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+              
+                <!-- Product Card 1 -->
+                <div class="bg-white p-8 rounded-lg text-center hover:shadow-2xl">
+                    <img src="image\Product\product_3.webp" alt="Kedai Kopi NF_Coffee" class="rounded-lg shadow-xl w-full mb-2">
+                    <h3 class="text-xl font-bold text-yellow-700 mb-2 mt-2">Biji Kopi Nusantara</h3>
+                    <p class="text-yellow-950/80">Pilihan biji kopi Arabika dan Robusta dari Gayo, Toraja, hingga Bali Kintamani. Tersedia dalam bentuk biji atau bubuk.</p>
+                </div>
+              
+                <!-- Product Card 2 -->
+                <div class="bg-white p-8 rounded-lg text-center hover:shadow-2xl">
+                    <img src="image\Product\product_1.png" class="rounded-lg shadow-xl w-full mb-2" >
+                    <h3 class="text-xl font-bold text-yellow-700 mb-2">Signature Drinks</h3>
+                    <p class="text-yellow-950/80">Nikmati kreasi kopi andalan kami seperti Es Kopi Susu Gula Aren, Caramel Macchiato, dan aneka Manual Brew.</p>
+                </div>
+              
+                <!-- Product Card 3 -->
+                <div class="bg-white p-8 rounded-lg text-center hover:shadow-2xl">
+                    <img src="image\Product\product_2.jpg" class="rounded-lg shadow-xl w-full mb-2" >
+                    <h3 class="text-xl font-bold text-yellow-700 mb-2">Pastry & Makanan Ringan</h3>
+                    <p class="text-yellow-950/80">Teman sempurna untuk secangkir kopi Anda. Cicipi croissant, aneka cake, dan kudapan lezat lainnya.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== GALERI SECTION ===== -->
+    <section id="galeri" class="py-20">
+        <div class="container mx-auto px-2">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Galeri Kami</h2>
+                <p class="text-yellow-950/80 mt-2">Momen hangat dan cerita di kedai kami.</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="relative bg-white rounded-lg shadow-md overflow-hidden group">
+                    <img src="image/kedaiKopi.jpg" alt="Suasana Kedai" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300">
+                    
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30"></div>
+                    
+                    <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                            text-white text-1xl font-bold opacity-0 group-hover:opacity-100">
+                        Kedai Kopi
+                    </h1>
+                
+                </div>
+
+                <div class="relative bg-white rounded-lg shadow-md overflow-hidden group">
+                    <img src="image/Gallery/images.jfif" alt="Kopi Susu Aren" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30"></div>
+                    
+                    <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                            text-white text-1xl font-bold opacity-0 group-hover:opacity-100">
+                        Kopi Gula Aren
+                    </h1>
+
+                </div>
+
+                <div class="relative bg-white rounded-lg shadow-md overflow-hidden group">
+                    <img src="image/Gallery/brewing.jpg" alt="Proses Brewing" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300">
+                    
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30"></div>
+                    
+                    <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                            text-white text-1xl font-bold opacity-0 group-hover:opacity-100">
+                        Brewing Kopi
+                    </h1>
+                </div>
+
+                <div class="relative bg-white rounded-lg shadow-md overflow-hidden group">
+                    <img src="image/Gallery/pilahKopi.jpg" alt="Biji Kopi Pilihan" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300">
+                    
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30"></div>
+
+                    <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                            text-white text-1xl font-bold opacity-0 group-hover:opacity-100">
+                        Memilah Biji Kopi
+                    </h1>
+                </div>
+
+                <div class="relative bg-white rounded-lg shadow-md overflow-hidden group">
+                    <img src="image/Gallery/croissant.jpg" alt="Croissant" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30"></div>
+
+                    <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                            text-white text-1xl font-bold opacity-0 group-hover:opacity-100">
+                        Croissant dengan Kopi
+                    </h1>
+                </div>
+
+                <div class="relative bg-white rounded-lg shadow-md overflow-hidden group">
+                    <img src="image/Gallery/pelangganKami.jpg" alt="Pelanggan Kami" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300">
+                    
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30"></div>
+
+                    <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                            text-white text-1xl font-bold opacity-0 group-hover:opacity-100">
+                        Para pelanggan kami
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="py-20 bg-yellow-700/25">
+        <div class="container mx-auto px-6">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Apa Kata Pelanggan Kami</h2>
+                <p class="text-yellow-950/80 mt-2">Kami senang menjadi bagian dari hari Anda.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <p class="text-yellow-950/80 italic mb-4">"Kopi susu gula aren di sini terenak yang pernah saya coba! Tempatnya juga nyaman banget buat kerja."</p>
+                    <p class="font-bold text-yellow-700">- Farda Syamlan, Desainer Grafis</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <p class="text-yellow-950/80 italic mb-4">"Pilihan biji kopinya lengkap dan baristanya ramah. Selalu jadi tempat andalan untuk beli biji kopi bulanan."</p>
+                    <p class="font-bold text-yellow-700">- Rafieq Bamajbur, Penikmat Kopi</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== KONTAK SECTION ===== -->
+    <section id="kontak" class="py-20 relative overflow-hidden">
+        <!-- Scrolling Background Container -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+            <div id="image-container" class="flex h-full w-[200%] animate-[scroll_120s_linear_infinite]">
+                <!-- Images are dynamically inserted here. Styles for images are below -->
+            </div>
+        </div>
+        <!-- Black Transparent Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black/60 -z-0"></div>
+
+        <div class="relative container mx-auto px-6">
+    
+    
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Hubungi Kami</h2>
+                <p class="text-gray-200 mt-2">Kami siap menyeduh kopi terbaik untuk Anda.</p>
+            </div>
+    
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <form action="https://formsubmit.co/nframzi051@gmail.com" method="POST">
+    
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700 resize-none" required></textarea>
+                    </div>
+    
+                    <div class="text-center">
+                        <button type="submit" class="bg-yellow-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-yellow-900 transition shadow-lg">Kirim Pesan</button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- ===== FOOTER SECTION ===== -->
+<footer class="bg-yellow-950 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 NF_Coffee.</p>
+    </div>
+</footer>
+
+
+
+<script src="./js/Header.js"></script>
+<script src="./js/Kontak Section.js"></script>
+
+</body>
+</html>
