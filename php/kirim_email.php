@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <script src='https://cdn.tailwindcss.com'></script>
         
     </head>
+
     <body class='bg-yellow-700/10 text-yellow-950/85'>
 
         <div class='flex flex-col items-center justify-center h-screen text-center'>
@@ -59,7 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </html>
     ";
 } else {
-    // Jika user akses langsung tanpa submit form
     header("Location: index.html");
     exit;
 }
