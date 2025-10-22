@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/output.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <script
-  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
-  type="module"
-></script>
+    src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+    type="module"
+    ></script>
 
 </head>
 
@@ -53,11 +54,11 @@
     
 <body class="bg-yellow-700/10 text-yellow-950/85">
     <!-- ===== HERO SECTION ===== -->
-    <section id="beranda" class="grid md:grid-cols-2 pt-20 pl-20 bg-yellow-700/25">
-        <div class="container mx-auto px-6 py-20 text-left">
+    <section id="beranda" class="grid md:grid-cols-2 pt-20 pl-20 bg-yellow-700/25 max-md:pl-5">
+        <div class="container mx-auto px-6 py-20 text-center md:text-left">
             <h1 class="text-4xl md:text-6xl font-bold mb-4 mr-10">Nikmati Secangkir Kopi Pilihan Khas Nusantara</h1>
             <p class="text-lg text-yellow-950/85/80 mb-8 max-w-3xl mx-auto">Kami menyajikan biji kopi terbaik dari seluruh penjuru Indonesia, diolah dengan penuh cinta untuk menciptakan secangkir kebahagiaan untuk Anda.</p>
-            <a href="https://maps.app.goo.gl/gzR4YjhtB5NLdGdy6" class="bg-yellow-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-900">Kunjungi Kami</a>
+            <a href="/pages/kunjungi_kami.html" class="bg-yellow-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-900">Kunjungi Kami</a>
         </div>
 
         <div class="container translate-x-1/4 w-1/2 max-md:hidden">
@@ -77,13 +78,14 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-20 items-center">
                 <div>
-                    <img src="image\kedaiKopi.jpg" alt="Kedai Kopi NF_Coffee" class="rounded-lg shadow-xl w-full">
+                    <img src="/image/kedaiKopi.jpg" alt="Kedai Kopi NF_Coffee" class="rounded-lg shadow-xl w-full">
                 </div>
                 
                 <div>
                     <h2 class="text-3xl font-bold mb-4">Cerita di Balik Kami</h2>
                     <p class="text-yellow-950/85/80 mb-4">NF_Coffee lahir dari kecintaan kami terhadap kopi Indonesia. Kami berkeliling nusantara untuk menemukan biji kopi dengan karakter unik dan membawanya langsung ke cangkir Anda. Setiap seduhan adalah sebuah cerita.</p>
-                    <p class="text-yellow-950/85/80">Visi kami adalah untuk mempopulerkan kekayaan rasa kopi lokal dan menjadi rumah bagi para penikmat kopi untuk berkumpul dan berbagi inspirasi.</p>
+                    <p class="text-yellow-950/85/80 mb-10">Visi kami adalah untuk mempopulerkan kekayaan rasa kopi lokal dan menjadi rumah bagi para penikmat kopi untuk berkumpul dan berbagi inspirasi.</p>
+                    <a href="/pages/detail_tentangkami.html" class="bg-yellow-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-900">Detail Kami</a>
                 </div>
             </div>
         </div>
@@ -252,27 +254,29 @@
             </div>
     
             <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-                <form action="./php/kontak.php" method="POST">
-                    
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
-                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700" required>
-                    </div>
+                <!-- <form action="https://formsubmit.co/nframzi051@gmail.com" method="POST"></form> -->
+                <form action="./php/kirim_email.php" method="POST">
     
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700" required>
-                    </div>
-    
-                    <div class="mb-4">
-                        <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
-                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700 resize-none" required></textarea>
-                    </div>
-    
-                    <div class="text-center">
-                        <button type="submit" class="bg-yellow-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-yellow-900 transition shadow-lg">Kirim Pesan</button>
-                    </div>
-    
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700" required>
+                        </div>
+        
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700" required>
+                        </div>
+        
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700 resize-none" required></textarea>
+                        </div>
+        
+                        <div class="text-center">
+                            <button type="submit" class="bg-yellow-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-yellow-900 transition shadow-lg">Kirim Pesan</button>
+                        </div>
+
+
                 </form>
             </div>
         </div>
@@ -282,13 +286,14 @@
 <footer class="bg-yellow-950 text-white py-8">
     <div class="container mx-auto px-6 text-center">
         <p>&copy; 2025 NF_Coffee.</p>
+        <p>202310370311026 - Naufal Ramzi</p>
     </div>
 </footer>
 
 
 
 <script src="./js/Header.js"></script>
-<script src="./js/Kontak Section.js"></script>
+<script src="js/fetch_background_image.js"></script>
 
 </body>
 </html>

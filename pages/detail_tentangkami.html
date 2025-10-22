@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - NF_Coffee</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+<body class="bg-yellow-700/10 text-yellow-950/85">
+<!-- ===== HEADER SECTION ===== -->
+<header class="z-10 bg-white/80 fixed w-full">
+    <nav class="container mx-auto px-6 py-4 flex justify-between">
+        <img src="/image/logo_NFCoffee.png" class="hidden md:flex w-1/6">
+        <img src="/image/logo_NFCoffee_mobile.png" alt="Logo Mobile" class="md:hidden w-1/12">
+
+        <div class="hidden font-bold md:flex space-x-5 translate-y-1/4">
+            <a href="/index.html#beranda" class="text-gray-600 hover:text-yellow-700 transition">Beranda</a>
+            <a href="/index.html#tentang" class="text-gray-600 hover:text-yellow-700 transition">Tentang</a>
+            <a href="/index.html#produk" class="text-gray-600 hover:text-yellow-700 transition">Produk</a>
+            <a href="/index.html#galeri" class="text-gray-600 hover:text-yellow-700 transition">Galeri</a>
+            <a href="/index.html#kontak" class="text-gray-600 hover:text-yellow-700 transition">Kontak</a>
+        </div>
+
+        <!-- Mobile -->
+        <button id="mobile-menu-button" class="md:hidden text-yellow-950/85">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+
+    </nav>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-white font-bold">
+        <a href="#beranda" class="block text-gray-600 hover:text-yellow-700 transition">Beranda</a>
+        <a href="#tentang" class="block text-gray-600 hover:text-yellow-700 transition">Tentang</a>
+        <a href="#produk" class="block text-gray-600 hover:text-yellow-700 transition">Produk</a>
+        <a href="#galeri" class="block text-gray-600 hover:text-yellow-700 transition">Galeri</a>
+        <a href="#kontak" class="block text-gray-600 hover:text-yellow-700 transition">Kontak</a>
+    </div>
+
+
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="pt-28 pb-16 bg-yellow-700/25 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 pt-8">Cerita di Balik NF_Coffee</h1>
+</section>
+
+<!-- ===== CERITA KAMI ===== -->
+<section class="py-20 container mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <img src="/image/kedai_kopi_3.jpg" alt="Kedai NF_Coffee" class="rounded-lg shadow-lg w-full">
+        </div>
+        <div>
+            <h2 class="text-3xl font-bold mb-4 text-yellow-700">Awal Cerita Kami</h2>
+            <p class="text-yellow-950/80 mb-4 leading-relaxed">
+                NF_Coffee lahir dari kecintaan kami terhadap kekayaan kopi Indonesia. Sejak tahun 2020, kami memulai perjalanan menelusuri kebun kopi dari Aceh Gayo hingga Papua Wamena untuk menemukan cita rasa otentik nusantara. Kami percaya bahwa setiap biji kopi menyimpan cerita — tentang petani yang berdedikasi, tanah yang subur, dan budaya yang penuh kehangatan.
+            </p>
+            <p class="text-yellow-950/80 leading-relaxed">
+                Dengan semangat itu, kami menghadirkan kopi lokal terbaik langsung ke cangkir Anda, diseduh dengan sepenuh hati oleh barista kami yang berpengalaman.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== VISI DAN MISI ===== -->
+<section class="py-20 bg-yellow-700/25">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">Visi & Misi Kami</h2>
+        <div class="max-w-3xl mx-auto text-yellow-950/80 space-y-6">
+
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <p><strong>Visi:</strong></p>
+
+                <p>
+                    Menjadi kedai kopi lokal yang mampu mengangkat citra kopi Indonesia ke kancah dunia, sekaligus menjadi ruang bagi penikmat kopi untuk berbagi inspirasi dan cerita.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <p><strong>Misi Kami:</strong></p>
+                <ul class="list-disc text-left mx-auto max-w-xl pl-6 space-y-2">
+                    <li>Mendukung petani kopi lokal.</li>
+                    <li>Menyajikan kopi berkualitas tinggi.</li>
+                    <li>Membangun komunitas pecinta kopi.</li>
+                    <li>Menjadi bagian dari gerakan keberlanjutan dengan penggunaan bahan ramah lingkungan.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOUDER ===== -->
+<section class="py-20 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Founder NF_Coffee</h2>
+    <div class="grid md:grid-cols-1 gap-10">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img src="/image/photo%20profile/naufal.jpeg" class="w-40 h-40 object-cover rounded-full mx-auto mb-4 shadow-md">
+            <h3 class="text-xl font-semibold text-yellow-700">Naufal Ramzi</h3>
+            <p class="text-yellow-950/80">Founder & Coffee Enthusiast</p>
+            <p class="mt-3 text-sm text-yellow-950/70">Berawal dari hobi ngopi di rumah, kini membangun kedai dengan visi mengangkat kopi lokal naik kelas.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-yellow-950 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 NF_Coffee.</p>
+        <p>202310370311026 - Naufal Ramzi</p>
+    </div>
+</footer>
+
+<script src="/js/Header.js"></script>
+</body>
+</html>
